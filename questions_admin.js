@@ -1,18 +1,67 @@
 const ADMIN_2018 = [
-    {
-        chapter: "A_THEME",
-        title: "XLVI. Identify steps and benefits of accessing the NetSuite Support Center Role." ,
-        number: "69",
-        question: ["Who has access to the Support Center role?"],
-        options: {
-            A: "The CEO only",
-            B: "The Support Administrator",
-            C: "Anyone to whom it is assigned",
-            D: "Anyone with an Administrator role",
-        },
-        answers: ["C"],
-        study: ["SuiteAnswers topics: The NetSuite Account Center; Accessing the NetSuite Account Center"]
+{
+    chapter: "TEST_THEME",
+    title: "Test Title." ,
+    number: "69",
+    question: ["The right answer is C"],
+    options: {
+        A: "The CEO only",
+        B: "The Support Administrator",
+        C: "Anyone to whom it is assigned",
+        D: "Anyone with an Administrator role",
     },
+    answers: ["C"],
+    study: [
+        {
+            text : "SuiteAnswers topics: ",
+            link : "",
+        },
+        {
+            text : "The NetSuite Account Center",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/43368/kw/The%20NetSuite%20Account%20Center",
+        },
+        {
+            text : "Accessing the NetSuite Account Center",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10038/kw/Accessing%20the%20NetSuite%20Account%20Center",
+        },
+    ],
+},
+{
+    chapter: "TEST_THEME",
+    title: "XV. Identify when to use a custom record over a custom list.",
+    number: "23",
+    question: ["A2, B1, C3, D4"],
+    type: 'match',
+    options: {
+    A : "___ Create options in a Matrix item",
+    B : "___ Create custom Online Survey form",
+    C : "___ Create options in a Multi Select field",
+    D : "___ Create Dependent Dropdown Fields",
+
+    1 : "Custom Record",
+    2 : "Custom List",
+    3 : "Custom List",
+    4 : "Custom Record",
+},
+answers: ["A2", "B1", "C3", "D4"],
+    study: [
+    {
+        text : "Consider how these use cases may drive a Custom List vs. Custom Record design decision:\n" +
+            "dependent dropdowns, reporting requirements, need for an online form, one to many data relationships.\n" +
+            "SuiteAnswers keywords bolded above.",
+        link : "",
+    },
+    {
+        text : "SuiteAnswers Topics:",
+        link : "",
+    },
+    {
+        text : "Creating Online Custom Record Forms",
+        link : "https://netsuite.custhelp.com/app/answers/list/kw/Creating%20Online%20Custom%20Record%20Forms/search/1",
+    },
+],
+},
+
 {
 chapter: "SuiteAnalytics",
 title: "I. Identify the options in defining advanced saved searches to obtain the described results.",
@@ -25,9 +74,21 @@ C : "Transaction Search selecting transactions dated prior to Quarter End and of
 D : "Customer Search where Balances are greater than 0 joined to Applied To Transactions for selecting paid transactions prior to Quarter End date, summarized by customer",
 },
 answers: ["B"],
-study : ["Master these concepts--use these as SuiteAnswers Keywords: Summary types, formulas,\n" +
-"functions, expression builder (), minimum, maximum, grouping, averates, apply to. SuiteAnswers Topic: Search\n" +
-"Formula Examples and Tips"],
+study : [
+    {
+        text : "Master these concepts--use these as SuiteAnswers Keywords: Summary types, formulas,\n" +
+            "functions, expression builder (), minimum, maximum, grouping, averates, apply to.",
+        link : "",
+    },
+    {
+        text : "SuiteAnswers Topic: ",
+        link : "",
+    },
+    {
+        text : "Search Formula Examples and Tips",
+        link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8439/kw/Search%20Formula%20Examples%20and%20Tips",
+    },
+]
 },
 {
 chapter: "SuiteAnalytics",
@@ -41,9 +102,22 @@ C : "Field: Sale Rep, Summary Type: Group",
 D : "Field: Customer, Summary Type: Group",
 },
 answers: ["B", "C"],
-study : ["Master these concepts--use these as SuiteAnswers Keywords: Summary types, formulas,\n" +
-"functions, expression builder (), minimum, maximum, grouping, averates, apply to. SuiteAnswers Topic: Search\n" +
-"Formula Examples and Tips"],},
+    study : [
+        {
+            text : "Master these concepts--use these as SuiteAnswers Keywords: Summary types, formulas,\n" +
+                "functions, expression builder (), minimum, maximum, grouping, averates, apply to.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topic: ",
+            link : "",
+        },
+        {
+            text : "Search Formula Examples and Tips",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8439/kw/Search%20Formula%20Examples%20and%20Tips",
+        },
+    ]
+},
 {
 chapter: "SuiteAnalytics",
 title: "I. Identify the options in defining advanced saved searches to obtain the described results.",
@@ -56,9 +130,21 @@ C : "(State/Province= California, AND, Phone = starts with 415) AND (State/Provi
 D : "(State/Province= California), AND, (Phone = starts with 415) OR (State/Province = New York, OR, City = starts with New York)",
 },
 answers: ["B"],
-study : ["Master these concepts--use these as SuiteAnswers Keywords: Summary types, formulas,\n" +
-"functions, expression builder (), minimum, maximum, grouping, averates, apply to. SuiteAnswers Topic: Search\n" +
-"Formula Examples and Tips"],
+    study : [
+        {
+            text : "Master these concepts--use these as SuiteAnswers Keywords: Summary types, formulas,\n" +
+                "functions, expression builder (), minimum, maximum, grouping, averates, apply to.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topic",
+            link : "",
+        },
+        {
+            text : "Search Formula Examples and Tips",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8439/kw/Search%20Formula%20Examples%20and%20Tips",
+        },
+    ]
 },
 {
 chapter: "SuiteAnalytics",
@@ -72,8 +158,24 @@ C : "When was a report or search last run and how many times it has been execute
 D : "Changes or deletions made on Saved Search, Saved Report, and Report Schedule.",
 },
 answers: ["C", "D"],
-study: ["Study how NetSuite standard record types are joined to each other. SuiteAnswers Topics:\n" +
-"Search Formula Examples and Tips; Standard Search Filters"]
+    study : [
+        {
+            text : "Study how NetSuite standard record types are joined to each other.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Search Formula Examples and Tips",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8439/kw/Search%20Formula%20Examples%20and%20Tips",
+        },
+        {
+            text : "Standard Search Filters",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8442/kw/Standard%20Search%20Filters",
+        },
+    ]
 },
 {
 chapter: "SuiteAnalytics",
@@ -87,8 +189,24 @@ C : "Price Levels set on Customer Records",
 D : "Item Pricing tab from Customer records",
 },
 answers: ["A"],
-study: ["Study how NetSuite standard record types are joined to each other. SuiteAnswers Topics:\n" +
-"Search Formula Examples and Tips; Standard Search Filters"]
+    study : [
+        {
+            text : "Study how NetSuite standard record types are joined to each other.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Search Formula Examples and Tips",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8439/kw/Search%20Formula%20Examples%20and%20Tips",
+        },
+        {
+            text : "Standard Search Filters",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8442/kw/Standard%20Search%20Filters",
+        },
+    ]
 },
 {
 chapter: "SuiteAnalytics",
@@ -102,10 +220,26 @@ C : "Create a search for Sales by Sales Rep and schedule it to run prior to the 
 D : "Create a custom Report from the Sales Rep Detail Report and schedule the report to run prior to the meeting. On the schedule, make the recipients the Sales Reps and Managers to email the report.",
 },
 answers: ["C"],
-study: ["How to Study: Know how to compare these functions for sharing data, as related to Saved Searches vs. Custom\n" +
-"Reports: Messaging, Alerts, Scheduling, Emails. Know the difference between sending out a single record, vs.\n" +
-"summary of records. How is timing affected for these features? Is there a way to send them out to a predefined group of people? What if the recipient list varies depending on the results? SuiteAnswers Topic:\n" +
-"Defining Recipients for Saved Search Email; Sending Summarized vs. Single-Record Results"]
+    study : [
+        {
+            text : "How to Study: Know how to compare these functions for sharing data, as related to Saved Searches vs. Custom\n" +
+                "Reports: Messaging, Alerts, Scheduling, Emails. Know the difference between sending out a single record, vs.\n" +
+                "summary of records. How is timing affected for these features? Is there a way to send them out to a predefined group of people? What if the recipient list varies depending on the results?",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Defining Recipients for Saved Search Email",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8477/kw/Defining%20Recipients%20for%20Saved%20Search%20Email",
+        },
+        {
+            text : "Sending Summarized vs. Single-Record Results",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8488/kw/Sending%20Summarized%20vs.%20Single-Record%20Results",
+        },
+    ]
 },
 {
 chapter: "SuiteAnalytics",
@@ -119,10 +253,26 @@ C : "A search of Sales Orders with email notification on new records which trigg
 D : "A Report of Sales Orders with email notification on new records which triggers an Alert to send the search data to the Order Processing Group.",
 },
 answers: ["C"],
-study: ["How to Study: Know how to compare these functions for sharing data, as related to Saved Searches vs. Custom\n" +
-"Reports: Messaging, Alerts, Scheduling, Emails. Know the difference between sending out a single record, vs.\n" +
-"summary of records. How is timing affected for these features? Is there a way to send them out to a predefined group of people? What if the recipient list varies depending on the results? SuiteAnswers Topic:\n" +
-"Defining Recipients for Saved Search Email; Sending Summarized vs. Single-Record Results"]
+    study : [
+        {
+            text : "How to Study: Know how to compare these functions for sharing data, as related to Saved Searches vs. Custom\n" +
+                "Reports: Messaging, Alerts, Scheduling, Emails. Know the difference between sending out a single record, vs.\n" +
+                "summary of records. How is timing affected for these features? Is there a way to send them out to a predefined group of people? What if the recipient list varies depending on the results?",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Defining Recipients for Saved Search Email",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8477/kw/Defining%20Recipients%20for%20Saved%20Search%20Email",
+        },
+        {
+            text : "Sending Summarized vs. Single-Record Results",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8488/kw/Sending%20Summarized%20vs.%20Single-Record%20Results",
+        },
+    ]
 },
 {
 chapter: "SuiteAnalytics",
@@ -136,8 +286,12 @@ C : "Set the Column footer field to Month, and customize the report to include t
 D : "Set the Column footer field to Department, and customize the report to include the Month field and move it all the way to the left, and select the Group With checkbox.",
 },
 answers: ["B"],
-study: ["Know how to use these features with Custom Reports: Formulas, alternate date range, Group\n" +
-"With previous column"]
+study: [
+        {
+            text : "Know how to use these features with Custom Reports: Formulas, alternate date range, Group With previous column",
+            link : "",
+        },
+    ]
 },
 {
 chapter: "SuiteAnalytics",
@@ -151,8 +305,12 @@ C : "Drill Down Report controls",
 D : "Show on Reports page controls",
 },
 answers: ["B"],
-study: ["Know how to use these features with Custom Reports: Formulas, alternate date range, Group\n" +
-"With previous column"]
+    study: [
+        {
+            text : "Know how to use these features with Custom Reports: Formulas, alternate date range, Group With previous column",
+            link : "",
+        },
+    ]
 },
 {
 chapter: "SuiteAnalytics",
@@ -166,8 +324,12 @@ C : "Add % of Total Column",
 D : "Alternate Date Range Type",
 },
 answers: ["A", "B", "D"],
-study: ["Know how to use these features with Custom Reports: Formulas, alternate date range, Group\n" +
-"With previous column"]
+    study: [
+        {
+            text : "Know how to use these features with Custom Reports: Formulas, alternate date range, Group With previous column",
+            link : "",
+        },
+    ]
 },
 {
 chapter: "SuiteAnalytics",
@@ -181,15 +343,32 @@ C : "Enable the Global Dashboard Permissions feature.",
 D : "Create a Custom Role with the Publish Dashboard permission.",
 },
 answers: ["B"],
-study: ["Compare advantages and disadvantages of using standard roles with Publish Dashboard\n" +
-"permission, vs. creating custom roles only for publishing dashboards, vs. using the Global Permissions feature.\n" +
-"Review these SuiteAnswers topics: Publishing a Dashboard; Applying Changes to Published Dashboards"]
+    study : [
+        {
+            text : "Compare advantages and disadvantages of using standard roles with Publish Dashboard\n" +
+                "permission, vs. creating custom roles only for publishing dashboards, vs. using the Global Permissions feature.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Publishing a Dashboard",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8122/kw/Publishing%20a%20Dashboard",
+        },
+        {
+            text : "Applying Changes to Published Dashboards",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8120/kw/Applying%20Changes%20to%20Published%20Dashboards",
+        },
+    ]
 },
 {
 chapter: "SuiteAnalytics",
 title: "VI. Compare dashboard elements to address user requirements.",
 number: "12",
 question: ["Match the dashboard elements to their use case."],
+type: 'match',
 options: {
 A : "___ A Professional Services Manager requires a list of standard Project Metrics.",
 B : "___ An Account Manager requires a visual comparison of Open Invoices with date range options.",
@@ -202,9 +381,14 @@ D : "___ A Support Manager needs a comparison of the New Cases and Escalated acr
 4 : "KPI Scorecard",
 },
 answers: ["A1", "B3", "C2", "D4"],
-study: ["Compare these dashboard elements to each other: Key Performance Indicator, Reminder, KPI\n" +
-"Scorecard, Snapshot, KPI Meter. Know steps required to set up each of these, and the source data (does it\n" +
-"require a saved search, or a custom report?)."]
+    study : [
+        {
+            text : "Compare these dashboard elements to each other: Key Performance Indicator, Reminder, KPI\n" +
+                "Scorecard, Snapshot, KPI Meter. Know steps required to set up each of these, and the source data (does it\n" +
+                "require a saved search, or a custom report?)",
+            link : "",
+        },
+    ]
 },
 {
 chapter: "SuiteBUILDer",
@@ -218,9 +402,25 @@ C : "Item Receipt",
 D : "Vendor Credit",
 },
 answers: ["A", "C"],
-study: ["Know how these features work: Store Form with Record, Linked Transaction forms. Know which\n" +
-"record types these options are available with. SuiteAnswers topics: Creating Custom Entry and Transaction\n" +
-"Forms; Linking Transaction Forms"]
+    study: [
+        {
+            text : "Know how these features work: Store Form with Record, Linked Transaction forms. Know which\n" +
+                "record types these options are available with.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Creating Custom Entry and Transaction Forms",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10115/kw/Creating%20Custom%20Entry%20and%20Transaction%20Forms",
+        },
+        {
+            text : "Forms; Linking Transaction Forms",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10126/kw/Forms%3B%20Linking%20Transaction%20Forms",
+        },
+    ],
 },
 {
 chapter: "SuiteBUILDer",
@@ -234,9 +434,21 @@ C : "Edit the \"Insert Before Field\" value on the Display tab of the custom fie
 D : "Adjust the field order by editing the custom field > select the \"Apply to Forms\" button and modify the Field Order column",
 },
 answers: ["B"],
-study: ["Know custom field types. Know recommended practices for making fields mandatory, or setting\n" +
-"default values, at the field level vs. at the form level. SuiteAnswers topic: Custom Check Box field default to be\n" +
-"checked on Custom Form"]
+    study: [
+        {
+            text : "Know custom field types. Know recommended practices for making fields mandatory, or setting\n" +
+                "default values, at the field level vs. at the form level.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Custom Check Box field default to be checked on Custom Form",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/71096/kw/Custom%20Check%20Box%20field%20default%20to%20be%20checked%20on%20Custom%20Form",
+        },
+    ],
 },
 {
 chapter: "SuiteBUILDer",
@@ -250,9 +462,26 @@ C : "Administrators can access edit the Custom Form field.",
 D : "Records using Forms with the Store Form With Record option will override Preferred Form.",
 },
 answers: ["C", "D"],
-study: ["Know the difference between marking a Form \"Preferred\" vs. \"Restricted\" vs. clearing the\n" +
-"\"Enabled\" column. Understand implication of hiding the custom form field. Recognize where a custom form\n" +
-"can be marked Preferred. SuiteAnswers topic: Setting Default Forms for Roles; Defining Preferred Forms"]
+    study: [
+        {
+            text : "Know the difference between marking a Form \"Preferred\" vs. \"Restricted\" vs. clearing the\n" +
+                "\"Enabled\" column. Understand implication of hiding the custom form field. Recognize where a custom form\n" +
+                "can be marked Preferred.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Setting Default Forms for Roles",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9916/kw/Setting%20Default%20Forms%20for%20Roles",
+        },
+        {
+            text : "Defining Preferred Forms",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10123/kw/Defining%20Preferred%20Forms",
+        },
+    ],
 },
 {
 chapter: "SuiteBUILDer",
@@ -266,9 +495,26 @@ C : "Users restricted to a different specific form will not use the form.",
 D : "The form will only be used if the user has access to the form (Enabled in role).",
 },
 answers: ["C", "D"],
-study: ["Know the difference between marking a Form \"Preferred\" vs. \"Restricted\" vs. clearing the\n" +
-"\"Enabled\" column. Understand implication of hiding the custom form field. Recognize where a custom form\n" +
-"can be marked Preferred. SuiteAnswers topic: Setting Default Forms for Roles; Defining Preferred Forms"]
+    study: [
+        {
+            text : "Know the difference between marking a Form \"Preferred\" vs. \"Restricted\" vs. clearing the\n" +
+                "\"Enabled\" column. Understand implication of hiding the custom form field. Recognize where a custom form\n" +
+                "can be marked Preferred.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Setting Default Forms for Roles",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9916/kw/Setting%20Default%20Forms%20for%20Roles",
+        },
+        {
+            text : "Defining Preferred Forms",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10123/kw/Defining%20Preferred%20Forms",
+        },
+    ],
 },
 {
 chapter: "SuiteBUILDer",
@@ -282,10 +528,26 @@ C : "Customer",
 D : "Sales Order",
 },
 answers: ["B", "C"],
-study: [" Identify steps to create and publish online forms, identify use cases where an online form may\n" +
-"be used. Know how data is submitted using these online forms, and the mandatory fields for creating each.\n" +
-"Know the 3 record types that have online form capability. SuiteAnswers topics: Enable Online Forms; Creating\n" +
-"Online Custom Record Forms"]
+    study: [
+        {
+            text : "Identify steps to create and publish online forms, identify use cases where an online form may\n" +
+                    "be used. Know how data is submitted using these online forms, and the mandatory fields for creating each.\n" +
+                    "Know the 3 record types that have online form capability.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Enable Online Forms",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/33770/kw/Enable%20Online%20Forms",
+        },
+        {
+            text : "Creating Online Custom Record Forms",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10143/kw/Creating%20Online%20Custom%20Record%20Forms",
+        },
+    ],
 },
 {
 chapter: "SuiteBUILDer",
@@ -300,10 +562,30 @@ D : "DOC",
 E : "HTML",
 },
 answers: ["C", "E"],
-study: ["Know how to add a Custom Element to a custom form, and how it is used. Know how PDF vs.\n" +
-"HTML layout versions of printed forms differ, and when they are used. Know where the default settings are for\n" +
-"the user. SuiteAnswers topics: Defining Custom Elements; Transaction Form HTML Layouts; Transaction Form\n" +
-"PDF Layouts"]
+    study: [
+        {
+            text : "Know how to add a Custom Element to a custom form, and how it is used. Know how PDF vs.\n" +
+                "HTML layout versions of printed forms differ, and when they are used. Know where the default settings are for\n" +
+                "the user.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Defining Custom Elements",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10121/kw/Defining%20Custom%20Elements",
+        },
+        {
+            text : "Transaction Form HTML Layouts",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10116/kw/Transaction%20Form%20HTML%20Layouts",
+        },
+        {
+            text : "Transaction Form PDF Layouts",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10130/kw/Transaction%20Form%20PDF%20Layouts",
+        },
+    ],
 },
 {
 chapter: "SuiteBUILDer",
@@ -317,10 +599,30 @@ C : "Transaction Form PDF/HTML Layout > Header section",
 D : "Transaction Form PDF/HTML Layout > Transaction Forms tab",
 },
 answers: ["A"],
-study: ["Know how to add a Custom Element to a custom form, and how it is used. Know how PDF vs.\n" +
-"HTML layout versions of printed forms differ, and when they are used. Know where the default settings are for\n" +
-"the user. SuiteAnswers topics: Defining Custom Elements; Transaction Form HTML Layouts; Transaction Form\n" +
-"PDF Layouts"]
+    study: [
+        {
+            text : "Know how to add a Custom Element to a custom form, and how it is used. Know how PDF vs.\n" +
+                "HTML layout versions of printed forms differ, and when they are used. Know where the default settings are for\n" +
+                "the user.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Defining Custom Elements",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10121/kw/Defining%20Custom%20Elements",
+        },
+        {
+            text : "Transaction Form HTML Layouts",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10116/kw/Transaction%20Form%20HTML%20Layouts",
+        },
+        {
+            text : "Transaction Form PDF Layouts",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10130/kw/Transaction%20Form%20PDF%20Layouts",
+        },
+    ],
 },
 {
 chapter: "SuiteBUILDer",
@@ -334,9 +636,21 @@ C : "Old custom form may be corrupted, therefore a new one needs to be created."
 D : "Uncheck the Mandatory box in the custom field record that has Hidden display type setting.",
 },
 answers: ["D"],
-study: ["Know these custom field options and compare them to each other: Hidden, disabled, normal,\n" +
-"inline text. Know the difference between 1) setting field width to 0 vs. 2) hide field label. SuiteAnswers topic:\n" +
-"Setting Display Options for Custom Fields"]
+    study: [
+        {
+            text : "Know these custom field options and compare them to each other: Hidden, disabled, normal,\n" +
+                "inline text. Know the difference between 1) setting field width to 0 vs. 2) hide field label.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Setting Display Options for Custom Fields",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/Setting%20Display%20Options%20for%20Custom%20Fields/search/1",
+        },
+    ],
 },
 {
 chapter: "SuiteBUILDer",
@@ -351,10 +665,33 @@ D : "Clear the Apply Formatting box",
 E : "Check the Calculate Upon Submit box",
 },
 answers: ["B"],
-study: ["Know how to use these custom field features: Filtered lists based on criteria, Dependent\n" +
-"Dropdowns; Source data from one record to another, Formula fields. SuiteAnswers topics: Create Controlling\n" +
-"and Dependent Dropdown Fields or Nested List; Setting Filtering Criteria; Setting Sourcing Criteria; Creating\n" +
-"Formula Fields"]
+    study: [
+        {
+            text : "Know how to use these custom field features: Filtered lists based on criteria, Dependent\n" +
+                "Dropdowns; Source data from one record to another, Formula fields.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Create Controlling and Dependent Dropdown Fields or Nested List",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/19662/kw/Create%20Controlling%20and%20Dependent%20Dropdown%20Fields%20or%20Nested%20List",
+        },
+        {
+            text : "Setting Filtering Criteria",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10098/kw/Setting%20Filtering%20Criteria",
+        },
+        {
+            text : "Setting Sourcing Criteria",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10099/kw/Setting%20Sourcing%20Criteria",
+        },
+        {
+            text : "Creating Formula Fields",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10081/kw/Creating%20Formula%20Fields",
+        },
+    ],
 },
 {
 chapter: "SuiteBUILDer",
@@ -368,16 +705,33 @@ C : "Footer filters can only be added in a child record sublist",
 D : "A child record sublist allows for new records to be linked",
 },
 answers: ["D"],
-study: ["Memorize the differences in functionality between these 2 methods of creating sublists: 1)\n" +
-"Publish Search, or 2) Record is Parent. Which one allows creation of new records from the sublist view? Which \n" +
-"allows Customize View option? SuiteAnswers topics: Custom Child Record Sublists; Creating Saved Searches for\n" +
-"Custom Sublists"]
+    study: [
+        {
+            text : "Memorize the differences in functionality between these 2 methods of creating sublists: 1)\n" +
+                "Publish Search, or 2) Record is Parent. Which one allows creation of new records from the sublist view? Which \n" +
+                "allows Customize View option?",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Custom Child Record Sublists",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/65794/kw/Custom%20Child%20Record%20Sublists",
+        },
+        {
+            text : "Creating Saved Searches for Custom Sublists",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/48803/kw/Creating%20Saved%20Searches%20for%20Custom%20Sublists",
+        },
+    ],
 },
 {
 chapter: "SuiteBUILDer",
 title: "XV. Identify when to use a custom record over a custom list.",
 number: "23",
 question: ["Match the use of custom records and custom lists to the correct use case."],
+type: 'match',
 options: {
 A : "___ Create options in a Matrix item",
 B : "___ Create custom Online Survey form",
@@ -390,9 +744,22 @@ D : "___ Create Dependent Dropdown Fields",
 4 : "Custom Record",
 },
 answers: ["A2", "B1", "C3", "D4"],
-study: ["Consider how these use cases may drive a Custom List vs. Custom Record design decision:\n" +
-"dependent dropdowns, reporting requirements, need for an online form, one to many data relationships.\n" +
-"SuiteAnswers keywords bolded above. SuiteAnswers topic: Creating Online Custom Record Forms"]
+    study: [
+        {
+            text : "Consider how these use cases may drive a Custom List vs. Custom Record design decision:\n" +
+                    "dependent dropdowns, reporting requirements, need for an online form, one to many data relationships.\n" +
+                    "SuiteAnswers keywords bolded above.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Creating Online Custom Record Forms",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/Creating%20Online%20Custom%20Record%20Forms/search/1",
+        },
+    ],
 },
 {
 chapter: "SuiteBUILDer",
@@ -406,8 +773,20 @@ C : "By using the Use Mass Update to Auto-Generate primary keys",
 D : "By enabling the record on the Company>Auto-Generated Numbers page",
 },
 answers: ["A"],
-study: ["Identify the UI behavior and user access as defined by the settings in the header of the Custom\n" +
-"Record. SuiteAnswers topic: Creating Custom Record Types "]
+    study: [
+        {
+            text : "Identify the UI behavior and user access as defined by the settings in the header of the Custom Record.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Creating Custom Record Types",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10140/kw/Creating%20Custom%20Record%20Types",
+        },
+    ],
 },
 {
 chapter: "SuiteBUILDer",
@@ -421,8 +800,20 @@ C : "Include a custom List/Record field, set List/Record to the parent Record ty
 D : "Include a custom List/Record field, set List/Record to the parent Record type, and set Source List to the parent Record Type.",
 },
 answers: ["C"],
-study: ["Identify the UI behavior and user access as defined by the settings in the header of the Custom\n" +
-"Record. SuiteAnswers topic: Creating Custom Record Types "]
+    study: [
+        {
+            text : "Identify the UI behavior and user access as defined by the settings in the header of the Custom Record.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Creating Custom Record Types",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10140/kw/Creating%20Custom%20Record%20Types",
+        },
+    ],
 },
 {
 chapter: "SuiteCloud Platform",
@@ -436,8 +827,20 @@ C: "_______ Action",
 D: "_______ State",
 },
 answers: ["A1", "B4", "C3", "D2"],
-study: ["Study the various elements created as part of a workflow, and which order they are created in.\n" +
-"SuiteAnswers topic: Creating Your First Workflow"]
+    study: [
+        {
+            text : "Study the various elements created as part of a workflow, and which order they are created in.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Creating Your First Workflow",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/11554/kw/Creating%20Your%20First%20Workflow",
+        },
+    ],
 },
 {
 chapter: "SuiteCloud Platform",
@@ -451,8 +854,20 @@ C: "Create pop-up alert to remind users to enter Due Date when assigning a Task 
 D: "Create button to send an email to the Sales Rep's manager when a Sales Order greater than $100,000 is entered.",
 },
 answers: ["C", "D"],
-study: ["Recognize standard SuiteFlow use cases. Watch Webinar in SuiteAnswers: Use SuiteFlow to\n" +
-"Automate Business Workflows"]
+    study: [
+        {
+            text : "Recognize standard SuiteFlow use cases.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Creating Your First Workflow",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/11554/kw/Creating%20Your%20First%20Workflow",
+        },
+    ],
 },
 {
 chapter: "SuiteCloud Platform",
@@ -466,8 +881,20 @@ C : "Edit the 'Set Field Mandatory' action and add the conditions Department or 
 D : "Edit the ‘Set Field Mandatory’ action and add the conditions Department and Class \"Is Not Empty\"",
 },
 answers: ["D"],
-study: ["Understand how SuiteFlow Actions and Conditions are defined, and how they work together.\n" +
-"SuiteAnswers topics: Workflow Actions"]
+    study: [
+        {
+            text : "Understand how SuiteFlow Actions and Conditions are defined, and how they work together.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Workflow Actions",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/40578/kw/Workflow%20Actions",
+        },
+    ],
 },
 {
 chapter: "SuiteCloud Platform",
@@ -481,8 +908,20 @@ C: "Edit the Send Email action, set the contract file in the Attachment:File fie
 D: "Edit the Send Email action, set the contract file in the Include View Record Link field and Condition to Amount > 2000.00",
 },
 answers: ["C"],
-study: ["Understand how SuiteFlow Actions and Conditions are defined, and how they work together.\n" +
-"SuiteAnswers topics: Workflow Actions"]
+    study: [
+        {
+            text : "Understand how SuiteFlow Actions and Conditions are defined, and how they work together.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Workflow Actions",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/40578/kw/Workflow%20Actions",
+        },
+    ],
 },
 {
 chapter: "SuiteCloud Platform",
@@ -496,8 +935,20 @@ C: "When a customer is in California, set the Form field to \"Custom Form A\" on
 D: "Display an \"Over Credit Limit\" message on a sales order if the New order total added to the Customer Balance exceeds the credit limit and the customer is 30 days overdue.",
 },
 answers: ["C", "D"],
-study: ["Recognize when automation is best addressed with SuiteScript, rather than SuiteBuilder or\n" +
-"SuiteFlow. SuiteAnswers topic: Use Scheduled Workflow to Update Sublist Item"]
+    study: [
+        {
+            text : "Recognize when automation is best addressed with SuiteScript, rather than SuiteBuilder or SuiteFlow",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Use Scheduled Workflow to Update Sublist Item",
+            link : "https://netsuite.custhelp.com/app/answers/list/st/5/kw/Use%20Scheduled%20Workflow%20to%20Update%20Sublist%20Item/page/1/search/1",
+        },
+    ],
 },
 {
 chapter: "SuiteCloud Platform",
@@ -512,15 +963,33 @@ C : "Scripted Records page",
 D : "Script Deployments page",
 },
 answers: ["C", "D"],
-study: ["How would an administrator identify whether a SuiteFlow or a SuiteScript is running on a record\n" +
-"type? Where can an Administrator check on which scripts have been installed and are running in an account, as\n" +
-"opposed to test mode? SuiteAnswers topics: Using the Scripted Records Page; Script Deployment"]
+    study: [
+        {
+            text :"How would an administrator identify whether a SuiteFlow or a SuiteScript is running on a record\n" +
+                "type? Where can an Administrator check on which scripts have been installed and are running in an account, as\n" +
+                "opposed to test mode?",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Using the Scripted Records Page",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10555/kw/Using%20the%20Scripted%20Records%20Page",
+        },
+        {
+            text : "Script Deployment",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/32202/kw/Script%20Deployment",
+        },
+    ],
 },
 {
 chapter: "SuiteCloud Platform",
 title: "XXII. Order the steps in creating or finding and installing or uninstalling a SuiteBundle.  ",
 number: "31",
 question: ["Match the steps to uninstall a bundle from an account to the order they should be performed."],
+type: 'match',
 options: {
 A: "___ First",
 B: "___ Second",
@@ -533,9 +1002,21 @@ D: "___ Fourth",
 4 : "Go to Customization > SuiteBundler > Search & Install Bundles > List",
 },
 answers: ["A1", "B4", "C2", "D3"],
-study: ["How to install a SuiteApp/Bundle, Searching for bundles in the repository, creating and installing\n" +
-"a bundle, uninstalling a bundle. NOT ON TEST: configuration bundle. Keywords bolded above. SuiteAnswers\n" +
-"topic: SuiteBundler Overview (and related topics)"]
+    study: [
+        {
+            text :"How to install a SuiteApp/Bundle, Searching for bundles in the repository, creating and installing\n" +
+                "a bundle, uninstalling a bundle. NOT ON TEST: configuration bundle. Keywords bolded above.", // TODO check bolded
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "SuiteBundler Overview (and related topics)",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/SuiteBundler%20Overview%20(and%20related%20topics)/search/1",
+        },
+    ],
 },
 {
 chapter: "SuiteCloud Platform",
@@ -549,8 +1030,20 @@ C: "It is not possible to view all the components of a Managed Bundle before ins
 D: "All Managed Bundles are created by approved NetSuite Partners and have been verified by NetSuite.",
 },
 answers: ["B"],
-study: ["SuiteAnswers topic: SuiteBundler Overview (and related topics); Understanding Managed\n" +
-"Bundles"]
+    study: [
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "SuiteBundler Overview (and related topics)",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/SuiteBundler%20Overview%20(and%20related%20topics)/search/1",
+        },
+        {
+            text : "Understanding Managed Bundles",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10200/kw/Understanding%20Managed%20Bundles",
+        },
+    ],
 },
 {
 chapter: "SuiteCloud Platform",
@@ -564,9 +1057,14 @@ C: "SuiteTalk allows External Applications to communicate with NetSuite and proc
 D: "SuiteScript allows External Applications to communicate with NetSuite and process data.",
 },
 answers: ["B", "C"],
-study: ["Contrast these features in their uses, and limitations for managing data. You will be given\n" +
-"business use cases, and will select with feature can be used to meet the requirement. Focus on: data import,\n" +
-"data update, single sign-on, data validation, business process automation, triggers."]
+    study: [
+        {
+            text : "Contrast these features in their uses, and limitations for managing data. You will be given\n" +
+                "business use cases, and will select with feature can be used to meet the requirement. Focus on: data import,\n" +
+                "data update, single sign-on, data validation, business process automation, triggers.",
+            link : "",
+        },
+    ]
 },
 {
 chapter: "Setup and Administration",
@@ -580,10 +1078,33 @@ C: "The permission with the higher level of access takes precedence.",
 D: "Global and Role permissions will cause an error if there is a conflict.",
 },
 answers: ["B"],
-study: [" Know how custom roles are based upon Centers. Know why it is always recommended to create\n" +
-"custom roles, rather than just assign the standard role. SuiteAnswers topics: Managing NetSuite Roles;\n" +
-"Understanding NetSuite Permissions, Using the Global Permissions feature; Best Practices for NetSuite\n" +
-"Administrators (Intermediate) - SuiteWorld 2012"]
+    study: [
+        {
+            text : "Know how custom roles are based upon Centers. Know why it is always recommended to create\n" +
+                    "custom roles, rather than just assign the standard role.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Managing NetSuite Roles",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/Managing%20NetSuite%20Roles/search/1",
+        },
+        {
+            text : "Understanding NetSuite Permissions",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9921/kw/Understanding%20NetSuite%20Permissions%2C",
+        },
+        {
+            text : "Using the Global Permissions feature",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9923/kw/Using%20the%20Global%20Permissions%20feature",
+        },
+        {
+            text : "Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/22186/kw/Best%20Practices%20for%20NetSuite%20Administrators",
+        },
+    ]
 },
 {
 chapter: "Setup and Administration",
@@ -597,10 +1118,33 @@ C: "The Center Type affects the Tabs where the links are placed.",
 D: "The Center Type affects which Records the user has access to.",
 },
 answers: ["A", "C"],
-study: [" Know how custom roles are based upon Centers. Know why it is always recommended to create\n" +
-"custom roles, rather than just assign the standard role. SuiteAnswers topics: Managing NetSuite Roles;\n" +
-"Understanding NetSuite Permissions, Using the Global Permissions feature; Best Practices for NetSuite\n" +
-"Administrators (Intermediate) - SuiteWorld 2012"]
+study: [
+    {
+        text : "Know how custom roles are based upon Centers. Know why it is always recommended to create\n" +
+            "custom roles, rather than just assign the standard role.",
+        link : "",
+    },
+    {
+        text : "SuiteAnswers Topics:",
+        link : "",
+    },
+    {
+        text : "Managing NetSuite Roles",
+        link : "https://netsuite.custhelp.com/app/answers/list/kw/Managing%20NetSuite%20Roles/search/1",
+    },
+    {
+        text : "Understanding NetSuite Permissions",
+        link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9921/kw/Understanding%20NetSuite%20Permissions%2C",
+    },
+    {
+        text : "Using the Global Permissions feature",
+        link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9923/kw/Using%20the%20Global%20Permissions%20feature",
+    },
+    {
+        text : "Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012",
+        link : "https://netsuite.custhelp.com/app/answers/detail/a_id/22186/kw/Best%20Practices%20for%20NetSuite%20Administrators",
+    },
+]
 },
 {
 chapter: "Setup and Administration",
@@ -615,8 +1159,28 @@ D : "Setup > Sales Preferences > Standard Sales Roles field is set to \"Restrict
 E : "Subsidiary field on custom Sales Rep role lists all Subsidiaries where View access is permitted",
 },
 answers: ["A", "C"],
-study: ["SuiteAnswers topics: Permissions and Restrictions; Associating Subsidiaries with Entities;\n" +
-"Creating Intercompany Customers and Vendors; Controlling Employee Access to Subsidiaries"]
+    study: [
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Permissions and Restrictions",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/32509/kw/Permissions%20and%20Restrictions",
+        },
+        {
+            text : "Associating Subsidiaries with Entities",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9848/kw/Associating%20Subsidiaries%20with%20Entities",
+        },
+        {
+            text : "Creating Intercompany Customers and Vendors",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/20804/kw/Creating%20Intercompany%20Customers%20and%20Vendors",
+        },
+        {
+            text : "Controlling Employee Access to Subsidiaries",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9852/kw/Controlling%20Employee%20Access%20to%20Subsidiaries",
+        },
+    ]
 },
 {
 chapter: "Setup and Administration",
@@ -630,8 +1194,28 @@ C: "Records from their own subsidiary and child subsidiaries",
 D: "Only records from the subsidiary on their employee record",
 },
 answers: ["D"],
-study: ["SuiteAnswers topics: Permissions and Restrictions; Associating Subsidiaries with Entities;\n" +
-"Creating Intercompany Customers and Vendors; Controlling Employee Access to Subsidiaries"]
+    study: [
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Permissions and Restrictions",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/32509/kw/Permissions%20and%20Restrictions",
+        },
+        {
+            text : "Associating Subsidiaries with Entities",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9848/kw/Associating%20Subsidiaries%20with%20Entities",
+        },
+        {
+            text : "Creating Intercompany Customers and Vendors",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/20804/kw/Creating%20Intercompany%20Customers%20and%20Vendors",
+        },
+        {
+            text : "Controlling Employee Access to Subsidiaries",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9852/kw/Controlling%20Employee%20Access%20to%20Subsidiaries",
+        },
+    ]
 },
 {
 chapter: "Setup and Administration",
@@ -645,9 +1229,17 @@ C: "No more than one person should be assigned Administrator role.",
 D: "The Administrator role can be customized to remove certain permissions.",
 },
 answers: ["A", "B"],
-study: ["It is recommended that you have two Administrators, but they do not use the Administrator role\n" +
-"for their everyday access. SuiteAnswers topic: Best Practices for NetSuite Administrators (Intermediate) -\n" +
-"SuiteWorld 2012"]
+
+    study: [
+        {
+            text : "It is recommended that you have two Administrators, but they do not use the Administrator role for their everyday access.",
+            link : "",
+        },
+        {
+            text : "Best Practices for NetSuite Administrators (Intermediate) SuiteWorld 2012",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/22186/kw/Best%20Practices%20for%20NetSuite%20Administrators",
+        },
+    ]
 },
 {
 chapter: "Setup and Administration",
@@ -661,8 +1253,20 @@ C: "Sales Rep checkbox field on Employee record is not checked",
 D: "Sales Role box on the Custom Sales Person Role record is not checked",
 },
 answers: ["A", "B"],
-study: ["Review Forms and Searches tabs in Custom role screen. SuiteAnswers topics: Permissions and\n" +
-"Restrictions"]
+    study: [
+        {
+            text : "Review Forms and Searches tabs in Custom role screen.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Permissions and Restrictions",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/Permissions%20and%20Restrictions/search/1",
+        },
+    ]
 },
 {
 chapter: "Setup and Administration",
@@ -677,8 +1281,20 @@ D: "View access to the search results",
 E: "View access to the underlying detail from summary",
 },
 answers: ["D"],
-study: ["Review Forms and Searches tabs in Custom role screen. SuiteAnswers topics: Permissions and\n" +
-"Restrictions"]
+    study: [
+        {
+            text : "Review Forms and Searches tabs in Custom role screen.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Permissions and Restrictions",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/Permissions%20and%20Restrictions/search/1",
+        },
+    ]
 },
 {
 chapter: "Setup and Administration",
@@ -692,8 +1308,20 @@ C: "The Role has Department/Class/Location restriction",
 D: "The transaction date of the Vendor Bill is already closed",
 },
 answers: ["C"],
-study: ["Review Forms and Searches tabs in Custom role screen. SuiteAnswers topics: Permissions and\n" +
-"Restrictions"]
+    study: [
+        {
+            text : "Review Forms and Searches tabs in Custom role screen.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Permissions and Restrictions",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/Permissions%20and%20Restrictions/search/1",
+        },
+    ]
 },
 {
 chapter: "Setup and Administration",
@@ -712,8 +1340,32 @@ D: "___ Customer Center",
 4: "Allows viewing of Leads",
 },
 answers: ["A3", "B4", "C1", "D2"],
-study: ["SuiteAnswers topics: Assigning the Advanced Partner Center Role; Assigning Roles to Vendors;\n" +
-"Giving Customers Access; Employee Center Role, The Partner Center Role"]
+    study: [
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Assigning the Advanced Partner Center Role",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9520/kw/Assigning%20the%20Advanced%20Partner%20Center%20Role",
+        },
+        {
+            text : "Assigning Roles to Vendors",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/11186/kw/Assigning%20Roles%20to%20Vendors",
+        },
+        {
+            text : "Giving Customers Access",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9899/kw/Giving%20Customers%20Access",
+        },
+        {
+            text : "Employee Center Role",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/30661/kw/Employee%20Center%20Role",
+        },
+        {
+            text : "The Partner Center Role",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9527/kw/The%20Partner%20Center%20Role",
+        },
+    ]
 },
 {
 chapter: "Setup and Administration",
@@ -728,14 +1380,31 @@ D: "Automatic string translation for website descriptions",
 E: "Users can select their preferred language for UI and tab navigation",
 },
 answers: ["A", "C", "E"],
-study: ["SuiteAnswers topics: Multi-Language Names and Descriptions; Choosing a Language for Your\n" +
-"NetSuite User Interface; Setting Up Multiple Languages"]
+    study: [
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Multi-Language Names and Descriptions",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/28116/kw/Multi-Language%20Names%20and%20Descriptions",
+        },
+        {
+            text : "Choosing a Language for Your NetSuite User Interface",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8975/kw/Choosing%20a%20Language%20for%20Your%20NetSuite%20User%20Interface",
+        },
+        {
+            text : "Setting Up Multiple Languages",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/27470/kw/Setting%20Up%20Multiple%20Languages",
+        },
+    ]
 },
 {
 chapter: "Setup and Administration",
 title: "XXX. Recognize the capabilities of the Multi-language feature. ",
 number: "44",
 question: ["Match the Multi-language feature with its attribute."],
+type: 'match',
 options: {
 A: "___ SuiteAnswers",
 B: "___ Navigation Tabs",
@@ -745,8 +1414,24 @@ C: "___ Custom Field Label Text and related Help",
 3 : "Not Translated",
 },
 answers: ["A3", "B1", "C2"],
-study: ["SuiteAnswers topics: Multi-Language Names and Descriptions; Choosing a Language for Your\n" +
-"NetSuite User Interface; Setting Up Multiple Languages"]
+study: [
+    {
+        text : "SuiteAnswers Topics:",
+        link : "",
+    },
+    {
+        text : "Multi-Language Names and Descriptions",
+        link : "https://netsuite.custhelp.com/app/answers/detail/a_id/28116/kw/Multi-Language%20Names%20and%20Descriptions",
+    },
+    {
+        text : "Choosing a Language for Your NetSuite User Interface",
+        link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8975/kw/Choosing%20a%20Language%20for%20Your%20NetSuite%20User%20Interface",
+    },
+    {
+        text : "Setting Up Multiple Languages",
+        link : "https://netsuite.custhelp.com/app/answers/detail/a_id/27470/kw/Setting%20Up%20Multiple%20Languages",
+    },
+]
 },
 {
 chapter: "Setup and Administration",
@@ -760,9 +1445,29 @@ C: "Information Item is published to a Category where Audience is set to \"All R
 D: "The file's URL is pasted into an Information Item where Audience is set to \"All Roles\" and \"All Employees\"",
 },
 answers: ["C"],
-study: ["Know how these features work in NetSuite: sharing documents from File Cabinet through a\n" +
-"published link, publishing tabs, categories, information items to an Intranet. SuiteAnswers topics: Creating an\n" +
-"HTML Intranet Site; Publishing Information to an Internal Site; Working with the File Cabinet"]
+study: [
+    {
+        text : "Know how these features work in NetSuite: sharing documents from File Cabinet through a\n" +
+            "published link, publishing tabs, categories, information items to an Intranet.",
+        link : "",
+    },
+    {
+        text : "SuiteAnswers Topics:",
+        link : "",
+    },
+    {
+        text : "Creating an HTML Intranet Site",
+        link : "https://netsuite.custhelp.com/app/answers/detail/a_id/27643/kw/Creating%20an%20HTML%20Intranet%20Site",
+    },
+    {
+        text : "Publishing Information to an Internal Site",
+        link : "https://netsuite.custhelp.com/app/answers/detail/a_id/27774/kw/Publishing%20Information%20to%20an%20Internal%20Site",
+    },
+    {
+        text : "Working with the File Cabinet",
+        link : "https://netsuite.custhelp.com/app/answers/detail/a_id/63050/kw/Working%20with%20the%20File%20Cabinet",
+    },
+]
 },
 {
 chapter: "Setup and Administration",
@@ -776,8 +1481,24 @@ C: "Saved Search email alert settings",
 D: "Customer Center role assignments",
 },
 answers: ["B", "C"],
-study: ["SuiteAnswers keyword: Sandbox refresh, Release Preview. SuiteAnswers topics: Best Practices\n" +
-"for NetSuite Administrators (Intermediate) - SuiteWorld 2012"]
+    study: [
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Sandbox refresh",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/Sandbox%20refresh/search/1",
+        },
+        {
+            text : "Release Preview",
+            link : "https://netsuite.custhelp.com/app/answers/list/st/5/kw/Sandbox%20refresh/page/1/search/1",
+        },
+        {
+            text : "Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/22186/kw/Best%20Practices%20for%20NetSuite%20Administrators",
+        },
+    ]
 },
 {
 chapter: "Setup and Administration",
@@ -791,8 +1512,24 @@ C: "Outlook Integration",
 D: "CSV Import",
 },
 answers: ["B", "D"],
-study: ["SuiteAnswers keyword: Sandbox refresh, Release Preview. SuiteAnswers topics: Best Practices\n" +
-"for NetSuite Administrators (Intermediate) - SuiteWorld 2012"]
+    study: [
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Sandbox refresh",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/Sandbox%20refresh/search/1",
+        },
+        {
+            text : "Release Preview",
+            link : "https://netsuite.custhelp.com/app/answers/list/st/5/kw/Sandbox%20refresh/page/1/search/1",
+        },
+        {
+            text : "Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/22186/kw/Best%20Practices%20for%20NetSuite%20Administrators",
+        },
+    ]
 },
 {
 chapter: "Setup and Administration",
@@ -806,11 +1543,27 @@ C : "Create a CSV file with the Invoice number and the new line item data, then 
 D : "Create a CSV file with the Invoice's External ID and the new line item data, then do an import of type Update using the Advanced Option: Overwrite Sublists = FALSE.",
 },
 answers: ["D"],
-study: ["Topics include: Advanced Options in CSV tool: multi-threading, CSV mapping options: default\n" +
-"values, internal|external|name ID options. Best practices around system notes in CSV import. Where else are \n" +
-"there CSV import options, besides the main CSV import tool? Who has access to checkbox to run scripts against\n" +
-"the import? SuiteAnswers keywords bolded above. SuiteAnswers topics: Webinar: Easy Data Migration with\n" +
-"NetSuite CSV Imports; Guidelines for using CSV import tool for data imports"]
+    study: [
+        {
+            text : "Topics include: Advanced Options in CSV tool: multi-threading, CSV mapping options: default\n" +
+                "values, internal|external|name ID options. Best practices around system notes in CSV import. Where else are \n" +
+                "there CSV import options, besides the main CSV import tool? Who has access to checkbox to run scripts against\n" +
+                "the import? SuiteAnswers keywords bolded above.", // TODO bolded
+            link : "",
+        },
+        {
+            text : "SuiteAnswers Topics:",
+            link : "",
+        },
+        {
+            text : "Webinar: Easy Data Migration with NetSuite CSV Imports (Removed)",
+            link : "",
+        },
+        {
+            text : "Guidelines for using CSV import tool for data imports",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9973/kw/Guidelines%20for%20using%20CSV%20import%20tool%20for%20data%20imports",
+        },
+    ]
 },
 {
 chapter: "Setup and Administration",
@@ -824,8 +1577,13 @@ C: "Country codes are in International format",
 D: "Currency codes are in International format",
 },
 answers: ["B", "C", "D"],
-study: ["Common errors: required field is null, read-only field, invalid reference (spelled item name\n" +
-"wrong, e.g.)"]
+    study: [
+        {
+            text : "Common errors: required field is null, read-only field, invalid reference (spelled item name\n" +
+                "wrong, e.g.)",
+            link : "",
+        },
+    ]
 },
 {
 chapter: "Setup and Administration",
@@ -839,8 +1597,13 @@ C: "Execute a new Saved Search on Roles with permission of Publish Search and in
 D: "Execute a new Saved Search on the search record using the criteria of public equals true and display name of search owners.",
 },
 answers: ["D"],
-study: ["Managing Saved Searches: which searches are being run, who is exporting, active or inactive\n" +
-"searches, optimization, data maintenance"]
+    study: [
+        {
+            text : "Managing Saved Searches: which searches are being run, who is exporting, active or inactive\n" +
+                "searches, optimization, data maintenance",
+            link : "",
+        },
+    ]
 },
 {
 chapter: "Setup and Administration",
@@ -854,7 +1617,12 @@ C: "The Require Authorization for Credit Card Transactions box is not enabled in
 D: "The Ignore CSC Response on Stand Alone Cash Sales is checked in the Credit Card Processor setup.",
 },
 answers: ["C"],
-study: ["Comparison of Enable Features vs. Company Preferences vs. Home > Set Preferences"]
+    study: [
+        {
+            text : "Comparison of Enable Features vs. Company Preferences vs. Home > Set Preferences",
+            link : "",
+        },
+    ]
 },
 {
 chapter : 'Data Security',
@@ -868,9 +1636,29 @@ C: "Personalize the sales manager's Login Audit trail to display lists permissio
 D: "View the sale manager's employee record and review the global permissions.",
 },
 answers: ["A"],
-study: ["User login security: password reset, User security question, weak/strong password, forced\n" +
-"changes, authentication options, minimum password length, etc. SuiteAnswers keyword: Password security\n" +
-"SuiteAnswers topic: Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012"]
+    study: [
+        {
+            text : "User login security: password reset, User security question, weak/strong password, forced\n" +
+                "changes, authentication options, minimum password length, etc.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers keyword: Password security",
+            link : "https://netsuite.custhelp.com/app/answers/list/st/5/kw/Password%20security/page/1/search/1",
+        },
+        {
+            text : "Webinar: Easy Data Migration with NetSuite CSV Imports (Removed)",
+            link : "",
+        },
+        {
+            text : "Guidelines for using CSV import tool for data imports",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9973/kw/Guidelines%20for%20using%20CSV%20import%20tool%20for%20data%20imports",
+        },
+        {
+            text : "Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/22186/kw/Best%20Practices%20for%20NetSuite%20Administrators",
+        },
+    ]
 },
 {
 chapter : 'Data Security',
@@ -884,9 +1672,29 @@ C: "Clear the Give Access checkbox on the employee record.",
 D: "Update IP address restriction on the employee record to office IP address",
 },
 answers: ["C"],
-study: ["User login security: password reset, User security question, weak/strong password, forced\n" +
-"changes, authentication options, minimum password length, etc. SuiteAnswers keyword: Password security\n" +
-"SuiteAnswers topic: Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012"]
+    study: [
+        {
+            text : "User login security: password reset, User security question, weak/strong password, forced\n" +
+                "changes, authentication options, minimum password length, etc.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers keyword: Password security",
+            link : "https://netsuite.custhelp.com/app/answers/list/st/5/kw/Password%20security/page/1/search/1",
+        },
+        {
+            text : "Webinar: Easy Data Migration with NetSuite CSV Imports (Removed)",
+            link : "",
+        },
+        {
+            text : "Guidelines for using CSV import tool for data imports",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9973/kw/Guidelines%20for%20using%20CSV%20import%20tool%20for%20data%20imports",
+        },
+        {
+            text : "Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/22186/kw/Best%20Practices%20for%20NetSuite%20Administrators",
+        },
+    ]
 },
 {
 chapter : 'Data Security',
@@ -901,8 +1709,21 @@ D: "Only specific Customers with access to the Category",
 E: "Only employees who are logged into Employee Center",
 },
 answers: ["C"],
-study: ["Know these methods of working with the NetSuite File Cabinet: File Cabinet, Group access,\n" +
-"available without login, publish the URL internal vs. external. SuiteAnswers topic: Working with the File Cabinet"]
+    study: [
+        {
+            text : "Know these methods of working with the NetSuite File Cabinet: File Cabinet, Group access,\n" +
+                "available without login, publish the URL internal vs. external.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers topic:",
+            link : "",
+        },
+        {
+            text : "Working with the File Cabinet",
+            link : "https://netsuite.custhelp.com/app/answers/list/st/5/kw/Working%20with%20the%20File%20Cabinet/page/1/search/1",
+        },
+    ]
 },
 {
 chapter : 'Data Security',
@@ -916,8 +1737,21 @@ C : "The file's \"Available Without Login\" checkbox is cleared.",
 D : "Publishing Site Category contains ‘All Customers’",
 },
 answers: ["C"],
-study: ["Know these methods of working with the NetSuite File Cabinet: File Cabinet, Group access,\n" +
-"available without login, publish the URL internal vs. external. SuiteAnswers topic: Working with the File Cabinet"]
+    study: [
+        {
+            text : "Know these methods of working with the NetSuite File Cabinet: File Cabinet, Group access,\n" +
+                "available without login, publish the URL internal vs. external.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers topic:",
+            link : "",
+        },
+        {
+            text : "Working with the File Cabinet",
+            link : "https://netsuite.custhelp.com/app/answers/list/st/5/kw/Working%20with%20the%20File%20Cabinet/page/1/search/1",
+        },
+    ]
 },
 {
 chapter : 'Data Security',
@@ -931,8 +1765,21 @@ C: "Any members from either the Support Team or the Customer Service Groups.",
 D: "Only members from Customer Service that meet Support Team group criteria.",
 },
 answers: ["D"],
-study: ["Know these methods of working with the NetSuite File Cabinet: File Cabinet, Group access,\n" +
-"available without login, publish the URL internal vs. external. SuiteAnswers topic: Working with the File Cabinet"]
+    study: [
+        {
+            text : "Know these methods of working with the NetSuite File Cabinet: File Cabinet, Group access,\n" +
+                "available without login, publish the URL internal vs. external.",
+            link : "",
+        },
+        {
+            text : "SuiteAnswers topic:",
+            link : "",
+        },
+        {
+            text : "Working with the File Cabinet",
+            link : "https://netsuite.custhelp.com/app/answers/list/st/5/kw/Working%20with%20the%20File%20Cabinet/page/1/search/1",
+        },
+    ]
 },
 {
 chapter : 'Data Security',
@@ -946,7 +1793,16 @@ C: "Select a password policy and length.",
 D: "Restrict the employee by the subsidiary",
 },
 answers: ["C"],
-study: ["SuiteAnswers topic: Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012"]
+    study: [
+        {
+            text : "SuiteAnswers topic:",
+            link : "",
+        },
+        {
+            text : "Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/22186/kw/Best%20Practices%20for%20NetSuite%20Administrators",
+        },
+    ]
 },
 {
 chapter : 'Data Security',
@@ -960,8 +1816,16 @@ C: "After a specified time of being idle",
 D: "When changing computers/devices",
 },
 answers: ["B", "D"],
-study: ["SuiteAnswers topic: Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012"]
-
+    study: [
+        {
+            text : "SuiteAnswers topic:",
+            link : "",
+        },
+        {
+            text : "Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/22186/kw/Best%20Practices%20for%20NetSuite%20Administrators",
+        },
+    ]
 },
 {
 chapter : 'Data Security',
@@ -980,8 +1844,24 @@ D: "___ Restricted List View on Role",
 4: "Limit quantity of data exposed",
 },
 answers: ["A4", "B3", "C1", "D2"],
-study: ["SuiteAnswers topic: Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012;\n" +
-"Terminating an Employee; Using the Login Audit Trail"]
+    study: [
+        {
+            text : "SuiteAnswers topic:",
+            link : "",
+        },
+        {
+            text : "Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012",
+            link : "hhttps://netsuite.custhelp.com/app/answers/detail/a_id/22186/kw/Best%20Practices%20for%20NetSuite%20Administrators",
+        },
+        {
+            text : "Terminating an Employee",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/31916/kw/Terminating%20an%20Employee",
+        },
+        {
+            text : "Using the Login Audit Trail",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/Using%20the%20Login%20Audit%20Trail/search/1",
+        },
+    ]
 },
 {
 chapter : 'Data Security',
@@ -1000,8 +1880,24 @@ D: "___ Production Access removed, email intact",
 4: "Form > View Source",
 },
 answers: ["A4", "B3", "C1", "D2"],
-study: ["SuiteAnswers topic: Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012;\n" +
-"Terminating an Employee; Using the Login Audit Trail"]
+    study: [
+        {
+            text : "SuiteAnswers topic:",
+            link : "",
+        },
+        {
+            text : "Best Practices for NetSuite Administrators (Intermediate) - SuiteWorld 2012",
+            link : "hhttps://netsuite.custhelp.com/app/answers/detail/a_id/22186/kw/Best%20Practices%20for%20NetSuite%20Administrators",
+        },
+        {
+            text : "Terminating an Employee",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/31916/kw/Terminating%20an%20Employee",
+        },
+        {
+            text : "Using the Login Audit Trail",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/Using%20the%20Login%20Audit%20Trail/search/1",
+        },
+    ]
 },
 {
 chapter : 'Data Security',
@@ -1015,9 +1911,14 @@ C: "Expense approvals and Commission will be directed to the previous manager.",
 D: "Existing expense approvals already queued remain in the previous supervisor's queue, despite effective date changes.",
 },
 answers: ["D"],
-study: ["Impact of changing fields such as, Accounts on the Item record after the Items have been sold;\n" +
-"changing the manager on employee record does not change historic manager on time entries; managers for\n" +
-"sales reps--how does this impact on sales reports?"]
+    study: [
+        {
+            text : "Impact of changing fields such as, Accounts on the Item record after the Items have been sold;\\n\" +\n" +
+                "\"changing the manager on employee record does not change historic manager on time entries; managers for\\n\" +\n" +
+                "\"sales reps--how does this impact on sales reports?",
+            link : "",
+        },
+    ]
 },
 {
 chapter: "Working with NetSuite",
@@ -1031,8 +1932,24 @@ C: "A notification message confirming the completed change is sent to the new em
 D: "A notification message for the requested change is sent to the email addresses of all Administrators.",
 },
 answers: ["A", "B"],
-study: ["SuiteAnswers topic: Using System Alerts; Setting Email Preferences; Configuring Administrative\n" +
-"Notifications"]
+    study: [
+        {
+            text : "SuiteAnswers topic:",
+            link : "",
+        },
+        {
+            text : "Using System Alerts",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9829/kw/Using%20System%20Alerts",
+        },
+        {
+            text : "Setting Email Preferences",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/43391/kw/Setting%20Email%20Preferences",
+        },
+        {
+            text : "Configuring Administrative Notifications",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/9809/kw/Configuring%20Administrative%20Notifications",
+        },
+    ]
 },
 {
 chapter: "Working with NetSuite",
@@ -1046,9 +1963,40 @@ C: "Go to to SuiteAnswers and click on the Preview Account link.",
 D: "Go to https://system.netsuite.com and change role to Release Preview role.",
 },
 answers: ["D"],
-study: ["SuiteAnswers topics: Overview of Release Preview; Accessing Your Release Preview\n" +
-"Environment; Preparing for Testing; Recommended Test Plan; More New Release Resources; Functionality\n" +
-"Available for Testing; How to Report Release Preview Issue; Understanding NetSuite Environments"]
+    study: [
+        {
+            text : "SuiteAnswers topic:",
+            link : "",
+        },
+        {
+            text : "Overview of Release Preview; Accessing Your Release Preview Environment",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/48831/kw/Overview%20of%20Release%20Preview",
+        },
+        {
+            text : "Preparing for Testing",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/48832/kw/Preparing%20for%20Testing",
+        },
+        {
+            text : "Recommended Test Plan",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/48833/kw/Recommended%20Test%20Plan",
+        },
+        {
+            text : "More New Release Resources",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/More%20New%20Release%20Resources/search/1",
+        },
+        {
+            text : "Functionality Available for Testing",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/39122/kw/Functionality%20Available%20for%20Testing",
+        },
+        {
+            text : "How to Report Release Preview Issue",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/39123/kw/How%20to%20Report%20Release%20Preview%20Issue",
+        },
+        {
+            text : "Understanding NetSuite Environments",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/Understanding%20NetSuite%20Environments/search/1",
+        },
+    ]
 },
 {
 chapter: "Working with NetSuite",
@@ -1062,9 +2010,40 @@ C: "Confirm settings for Release Preview and Sandbox Options.",
 D: "Log into the Release Preview environment through the New Release portlet.",
 },
 answers: ["A", "C"],
-study: ["SuiteAnswers topics: Overview of Release Preview; Accessing Your Release Preview\n" +
-"Environment; Preparing for Testing; Recommended Test Plan; More New Release Resources; Functionality\n" +
-"Available for Testing; How to Report Release Preview Issue; Understanding NetSuite Environments"]
+    study: [
+        {
+            text : "SuiteAnswers topics:",
+            link : "",
+        },
+        {
+            text : "Overview of Release Preview; Accessing Your Release Preview Environment",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/48831/kw/Overview%20of%20Release%20Preview",
+        },
+        {
+            text : "Preparing for Testing",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/48832/kw/Preparing%20for%20Testing",
+        },
+        {
+            text : "Recommended Test Plan",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/48833/kw/Recommended%20Test%20Plan",
+        },
+        {
+            text : "More New Release Resources",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/More%20New%20Release%20Resources/search/1",
+        },
+        {
+            text : "Functionality Available for Testing",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/39122/kw/Functionality%20Available%20for%20Testing",
+        },
+        {
+            text : "How to Report Release Preview Issue",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/39123/kw/How%20to%20Report%20Release%20Preview%20Issue",
+        },
+        {
+            text : "Understanding NetSuite Environments (Removed)",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/Understanding%20NetSuite%20Environments/search/1",
+        },
+    ]
 },
 {
 chapter: "Working with NetSuite",
@@ -1078,9 +2057,36 @@ C: "The role has the Process Bills permission with Edit level.",
 D: "The user has clicked the refresh link in the Reminders portlet.",
 },
 answers: ["B", "C"],
-study: ["SuiteAnswers topics: Troubleshooting Performance Issues; Admin Notifications and\n" +
-"status.netsuite.com; Create a portlet that will show status.netsuite.com; Increasing Speed and Performance in\n" +
-"NetSuite; Improving Client Performance; Optimizing Custom Form Performance"]
+    study: [
+        {
+            text : "SuiteAnswers topics:",
+            link : "",
+        },
+        {
+            text : "Troubleshooting Performance Issues",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/48700/kw/Troubleshooting%20Performance%20Issues",
+        },
+        {
+            text : "Admin Notifications and status.netsuite.com",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/85744/kw/Admin%20Notifications",
+        },
+        {
+            text : "Create a portlet that will show status.netsuite.com",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/50113/kw/status.netsuite.com",
+        },
+        {
+            text : "Increasing Speed and Performance in NetSuite",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/48705/kw/Increasing%20Performance",
+        },
+        {
+            text : "Improving Client Performance",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8965/kw/Increasing%20Performance",
+        },
+        {
+            text : "Optimizing Custom Form Performance",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/85699/kw/Optimizing%20Custom%20Form%20Performance",
+        },
+    ]
 },
 {
 chapter: "Working with NetSuite",
@@ -1094,9 +2100,36 @@ C: "Verify that correct form is the preferred form for the user.",
 D: "Examine the custom field's formula and if Store Value is checked.",
 },
 answers: ["B", "D"],
-study: ["SuiteAnswers topics: Troubleshooting Performance Issues; Admin Notifications and\n" +
-"status.netsuite.com; Create a portlet that will show status.netsuite.com; Increasing Speed and Performance in\n" +
-"NetSuite; Improving Client Performance; Optimizing Custom Form Performance"]
+    study: [
+        {
+            text : "SuiteAnswers topics:",
+            link : "",
+        },
+        {
+            text : "Troubleshooting Performance Issues",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/48700/kw/Troubleshooting%20Performance%20Issues",
+        },
+        {
+            text : "Admin Notifications and status.netsuite.com",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/85744/kw/Admin%20Notifications",
+        },
+        {
+            text : "Create a portlet that will show status.netsuite.com",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/50113/kw/status.netsuite.com",
+        },
+        {
+            text : "Increasing Speed and Performance in NetSuite",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/48705/kw/Increasing%20Performance",
+        },
+        {
+            text : "Improving Client Performance",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/8965/kw/Increasing%20Performance",
+        },
+        {
+            text : "Optimizing Custom Form Performance",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/85699/kw/Optimizing%20Custom%20Form%20Performance",
+        },
+    ]
 },
 {
 chapter: "Working with NetSuite",
@@ -1110,8 +2143,24 @@ C: "Search Employee for users with at least one Role to get count",
 D: "Search Employees for users with Login Access specified to get count",
 },
 answers: ["C", "D"],
-study: ["SuiteAnswers topics: Checking the User License Count; Full Access User and Employee Center\n" +
-"Licenses Usage Count; Roles That Do Not Use Up Full User License"]
+    study: [
+        {
+            text : "SuiteAnswers topics:",
+            link : "",
+        },
+        {
+            text : "Checking the User License Count",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/33820/kw/Checking%20the%20User%20License%20Count",
+        },
+        {
+            text : "Full Access User and Employee Center Licenses Usage Count",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/34697/kw/Full%20Access%20User%20and%20Employee%20Center",
+        },
+        {
+            text : "Roles That Do Not Use Up Full User License",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/Roles%20That%20Do%20Not%20Use%20Up%20Full%20User%20License/search/1",
+        },
+    ]
 },
 {
 chapter: "Working with NetSuite",
@@ -1129,8 +2178,24 @@ C: "Full Access = 2 and Employee Center = 1",
 D: "Full Access = 2 and Employee Center = 3",
 },
 answers: ["C"],
-study: ["SuiteAnswers topics: Checking the User License Count; Full Access User and Employee Center\n" +
-"Licenses Usage Count; Roles That Do Not Use Up Full User License"]
+    study: [
+        {
+            text : "SuiteAnswers topics:",
+            link : "",
+        },
+        {
+            text : "Checking the User License Count",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/33820/kw/Checking%20the%20User%20License%20Count",
+        },
+        {
+            text : "Full Access User and Employee Center Licenses Usage Count",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/34697/kw/Full%20Access%20User%20and%20Employee%20Center",
+        },
+        {
+            text : "Roles That Do Not Use Up Full User License",
+            link : "https://netsuite.custhelp.com/app/answers/list/kw/Roles%20That%20Do%20Not%20Use%20Up%20Full%20User%20License/search/1",
+        },
+    ]
 },
 {
 chapter: "Working with NetSuite",
@@ -1144,7 +2209,20 @@ C: "SuiteTraining",
 D: "SuiteAnswers",
 },
 answers: ["B"],
-study: ["SuiteAnswers topics: The NetSuite Account Center; Accessing the NetSuite Account Center"]
+    study: [
+    {
+        text : "SuiteAnswers topics:",
+        link : "",
+    },
+    {
+        text : "The NetSuite Account Center",
+        link : "https://netsuite.custhelp.com/app/answers/detail/a_id/43368/kw/The%20NetSuite%20Account%20Center",
+    },
+    {
+        text : "Accessing the NetSuite Account Center",
+        link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10038/kw/Accessing%20the%20NetSuite%20Account%20Center",
+    },
+],
 },
 {
 chapter: "Working with NetSuite",
@@ -1158,7 +2236,20 @@ C: "Anyone to whom it is assigned",
 D: "Anyone with an Administrator role",
 },
 answers: ["C"],
-study: ["SuiteAnswers topics: The NetSuite Account Center; Accessing the NetSuite Account Center"]
+    study: [
+        {
+            text : "SuiteAnswers topics:",
+            link : "",
+        },
+        {
+            text : "The NetSuite Account Center",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/43368/kw/The%20NetSuite%20Account%20Center",
+        },
+        {
+            text : "Accessing the NetSuite Account Center",
+            link : "https://netsuite.custhelp.com/app/answers/detail/a_id/10038/kw/Accessing%20the%20NetSuite%20Account%20Center",
+        },
+    ],
 },
 
 ];
