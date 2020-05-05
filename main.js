@@ -138,11 +138,12 @@ function Tmain() {
 
             body.append('<h2>' + CHALLENGES[main.currentChallenge]+ '</h2>');
             body.append('<p>Question #' + (main.currentQuestionNum - main.wrongAnswers + 1) + ' out of ' +(main.questions.length - main.wrongAnswers)+' </p><br>');
-            if (main.currentChallenge === 'OPEN_BOOK_TEST') {
-                body.append('<p>Chapter: ' + main.currentQuestion.chapter +'</p>');
-                body.append('<p>Subject: ' + main.currentQuestion.title + '</p><br>');
-            }
             body.append('<p>Question: ' + main.currentQuestion.question.join('<br>') +' </p><br>');
+
+            if (main.currentQuestion.answers.length > 1) {
+                body.append('<p>Please select ' + main.currentQuestion.answers.length + ' answers</p><br>');
+            }
+
 
 
             if (main.currentQuestion.type === 'match') {
@@ -280,7 +281,10 @@ function Tmain() {
                 }
 
                     // Show the Correct/Wrong text
-                body.append('<p>' + (main.currentQuestion.isCorrect ? 'Correct!' : 'Wrong!') + ' The right answer is: ' + main.currentQuestion.answers.join(', '));
+                body.append('<p>' + (main.currentQuestion.isCorrect ? 'Correct!' : 'Wrong!') + ' The right answer is: ' + main.currentQuestion.answers.join(', ') + '</p><br>');
+
+                body.append('<p>Chapter: ' + main.currentQuestion.chapter +'</p>');
+                body.append('<p>Subject: ' + main.currentQuestion.title + '</p><br>');
 
                     // Show "How to Study" section
                 var studyTextAndLinks = "";
@@ -294,25 +298,24 @@ function Tmain() {
                         }
                     }
                 });
-                body.append('<p><b>How to study</b> : ' + studyTextAndLinks + '</p><br>');
+                body.append('<p><b>How to study</b> ' + studyTextAndLinks + '</p><br>');
 
                     // Show the "Next" Button to move to next question of to the ready to finish stage.
                 body.append('<span class="submit_btn" id="answer_submit_btn">Next</span>');
                 $('#answer_submit_btn').on('click', function() {
                     main.currentQuestionNum++;
 
-                    if (main.currentChallenge === 'INCREMENTAL_STUDY') {
-                        main.shiftStage(SCREENS.SUMMARY_FINISH);
-                    }
-                    else {
-                        if (main.currentQuestionNum >= main.questions.length) {
-                            main.shiftStage(SCREENS.READY_TO_FINISH);
+                    if (main.currentQuestionNum >= main.questions.length) {
+                        if (main.currentChallenge === 'INCREMENTAL_STUDY') {
+                            main.shiftStage(SCREENS.SUMMARY_FINISH);
                         }
                         else {
-                            main.shiftStage(SCREENS.QUESTION);
+                            main.shiftStage(SCREENS.READY_TO_FINISH);
                         }
                     }
-
+                    else {
+                        main.shiftStage(SCREENS.QUESTION);
+                    }
 
                 });
             });
@@ -411,6 +414,6 @@ function Tmain() {
     };
 
     main.getMetricElements = function() {
-        return '<span>Yay, you did it!</span>'
+        return '<p>Metrics  placeholder</p>'
     }
 }
